@@ -1,0 +1,650 @@
+ *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#80461B;
+      color:white;
+      margin: 0;
+    }
+
+    /* BARRA SUPERIOR */
+    header{
+      background:#5f381a;
+      height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 25px;
+      border-bottom:1px solid #80461B;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#f54500;
+    }
+
+    .img-logo{
+      width: 65px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:35px;
+      margin-left:30px;
+    }
+
+    .nav-links a{
+      color:white;
+      text-decoration:none;
+      font-size:20px;
+      transition:0.2s;
+    }
+
+    .nav-links a:hover{
+      color:#ec9a01;
+    }
+
+    .nav-links a:active{
+      color:#ec9a01;
+      text-decoration: underline;
+    }
+
+    .left{
+      display:flex;
+      align-items:center;
+    }
+
+    /* BUSCADOR */
+    .search-area{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .search-box{
+      background:#5e462a;
+      border:none;
+      outline:none;
+
+      padding:12px 15px;
+      width:280px;
+
+      color:white;
+      border-radius:3px;
+      font-size:15px;
+    }
+
+    .search-btn{
+      background:#b8804c;
+      border:none;
+
+      color:white;
+
+      width:45px;
+      height:45px;
+
+      border-radius:3px;
+
+      cursor:pointer;
+      font-size:18px;
+    }
+
+    /* JUEGO DESTACADO */
+    .juego-container{
+      margin: 60px auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    .juego-destacado{
+      background:#5f381a;
+      border-radius:20px;
+      padding:20px;
+
+      display:flex;
+      gap:20px;
+
+      width:700px;
+    }
+
+    .leftJuego{
+      flex: 1.5;
+      width:50%;
+    }
+
+    .detalles{
+      flex: 1;
+      width:50%;
+
+      background:#3d2412;
+      border-radius:10px;
+      padding:20px;
+
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .img-juego{
+      width:150%;
+      height:100%;
+      object-fit:cover;
+
+      border-radius:10px;
+      display:block;
+    }
+
+    .nombre-juego{
+      font-size:32px;
+      margin-bottom:15px;
+    }
+
+    .descripcion-juego{
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    .precio-btn{
+      align-self:flex-end;
+
+      background:#0f6d16;
+      color:white;
+
+      border:none;
+      border-radius:6px;
+
+      padding:12px 20px;
+      font-size:18px;
+
+      cursor:pointer;
+      transition:0.2s;
+    }
+
+    .precio-btn:hover{
+      background:#14891d;
+    }
+
+    /* CATEGORIAS  cambiar el ancho fijo*/
+    .categorias {
+    width: 940px; 
+    margin: 40px auto;
+    }
+
+    .categorias h2 {
+      margin-bottom: 20px;
+      
+    }
+
+    .categorias ul {
+    display: flex; 
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    flex-wrap: wrap; 
+    background: #5f381a;
+    border-radius: 10px;
+    }
+
+    .categorias li {
+      flex: 1;
+    } 
+
+    .categorias a {
+      display: block;
+      padding: 20px;
+      
+      background: #996136;
+
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+    .categorias a:hover {
+      background: #b97842;
+    }
+
+    /* JUEGO RESEÑADO */
+    .JuegoReseñado-container{
+      width: 940px;
+      margin: 40px auto;
+    }
+     .Juego-Reseñado{
+      background-color: #5f381a;
+      padding:20px;
+      font-size: 0;
+      border-radius:25px;
+    }
+    .leftJuegoReseñado {
+      display: inline-block;
+      width: 65%;
+      border-radius: 15px;
+      vertical-align: top;
+      padding-right: 10px;
+    }
+    .DetallesJuegoReseñado-container{
+      background-color: #3d2412;
+      width: 35%;
+      display: inline-block;
+      min-height: 270px;
+      padding-top: 5px;
+      border-radius: 3px;
+      
+    }
+    .rightJuegoReseñado{
+      display: inline-block;
+      vertical-align: top;
+      width: 95%;
+      padding-left: 20px;
+      font-size: 13px;
+      min-height: 50px;
+    }
+    .nombre-JuegoReseñado{
+      font-size: 30px;
+      padding-bottom: 15px;
+      margin-top: 0;
+     }
+    .img-JuegoReseñado{
+     width: 99%;
+     border-radius: 3px;
+     height: 336px;
+    }
+    .Precio-container2{
+      text-align: right;
+      padding: 8px 15px;
+      border-radius: 4px;
+      border: 4px;
+      border-color: rgb(255, 255, 255);
+      float: right;
+      position: relative;
+      bottom:9px ;
+      left: 19px;
+    }
+      
+    .profileReseña{
+      display: inline-block;
+      vertical-align: top;
+       min-height: 80px;
+    }
+    .precio-btn2{
+      background:#0f6d16;
+      border: 2px;
+      color:rgb(255, 255, 255);
+      width:110px;
+      height:45px;
+      border-radius:3px;
+      cursor:pointer;
+      font-size:18px;
+    }
+    .profileReseña{
+      align-items: center;
+      display: flex;
+      padding: 10px;
+    }
+
+    .avatarReseña {
+      font-size: 24px;
+    }
+    .usernameReseña{               
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+    }
+
+    /* JUEGO CUADRICULA */
+    .juegos {
+    width: 940px;
+    margin: 40px auto;
+    }
+
+    .juegos h2 {
+      margin-bottom: 20px;
+    }
+
+    .juegos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+
+      background: #5f381a;
+    }
+
+    .juegos-grid li {
+      background: #996136;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .juegos-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .juegos-grid p {
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      margin: 0;
+    }
+        .favorito-puesto{
+      background-color: #ddce4a;
+      color: black;
+  }
+
+    button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #1a1a2e;
+    color: white;
+    margin-bottom: 6px;
+  }
+
+    /* pie de pagina */
+    footer{
+        margin-top: 40px;
+        color: #5f381a;
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    footer img{
+      width: 60px;
+      margin: 0;
+    }
+    .footer-redes{
+      text-align: center;
+    }
+    .footer-right{
+      text-align: right;
+      display: flex;
+      gap: 20px;
+    }
+    footer a{
+        color: #ffb199;
+        text-decoration: none;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+  
+
+
+
+
+
+
+
+/* TABLET */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        margin-left: 15px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+
+    .search-box {
+        width: 200px;
+    }
+
+
+    .juego-destacado {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .leftJuego,
+    .detalles {
+        width: 100%;
+    }
+
+    .img-juego {
+        width: 100%;
+        height: 250px;
+    }
+
+    .categorias {
+        width: 90%;
+    }
+
+    .JuegoReseñado-container {
+        width: 90%;
+    }
+
+    .leftJuegoReseñado {
+        width: 100%;
+        display: block;
+        padding-right: 0;
+    }
+
+    .DetallesJuegoReseñado-container {
+        width: 100%;
+        display: block;
+    }
+
+    .juegos {
+        width: 90%;
+    }
+
+    .juegos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .img-logo {
+        width: 50px;
+    }
+
+    .left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    .search-area {
+        width: 100%;
+    }
+
+    .search-box {
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    .juego-container {
+        margin: 30px auto;
+    }
+
+    .juego-destacado {
+        width: 95%;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .leftJuego,
+    .detalles {
+        width: 100%;
+    }
+
+    .img-juego {
+        width: 100%;
+        height: 200px;
+    }
+
+    .nombre-juego {
+        font-size: 22px;
+    }
+
+    .descripcion-juego {
+        font-size: 13px;
+    }
+
+    .precio-btn {
+        font-size: 15px;
+        padding: 10px 16px;
+    }
+
+
+    .categorias {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .categorias ul {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .categorias li {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .categorias a {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+
+    .JuegoReseñado-container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .leftJuegoReseñado {
+        width: 100%;
+        display: block;
+        padding-right: 0;
+    }
+
+    .img-JuegoReseñado {
+        width: 100%;
+        height: 200px;
+    }
+
+    .DetallesJuegoReseñado-container {
+        width: 100%;
+        display: block;
+        min-height: auto;
+    }
+
+    .rightJuegoReseñado {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .nombre-JuegoReseñado {
+        font-size: 22px;
+    }
+
+    .Precio-container2 {
+        float: none;
+        position: static;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .precio-btn2 {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    .juegos {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .juegos-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .juegos-grid img {
+        height: 150px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 12px;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    footer img {
+        width: 45px;
+    }
+}
